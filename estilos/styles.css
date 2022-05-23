@@ -131,7 +131,6 @@ nav ul li a:hover{
     margin-top: 0;
 }
 
-
 .servicios{
 
     display: flex;
@@ -155,7 +154,6 @@ nav ul li a:hover{
     
 }
 
-
 #tituloServicios:hover{
 
     color: white;
@@ -163,8 +161,6 @@ nav ul li a:hover{
     background-color: #fe5864;
     padding: 10px 20px 10px 20px;
 }
-
-
 
 #tituloServicios{
 
@@ -175,7 +171,6 @@ nav ul li a:hover{
     transition: all 300ms;
     
 }
-
 
 .imagenServicios{
     height: 100%;
@@ -189,7 +184,6 @@ nav ul li a:hover{
     width: 100%;
 }
 
-
 .contenidoBlog{
     width: 100%;
 }
@@ -201,7 +195,6 @@ nav ul li a:hover{
     margin: 40px 60px 40px 60px;
     width: auto;
 }
-
 
 .titulosBlog{
 
@@ -229,7 +222,6 @@ nav ul li a:hover{
 
 }
 
-
 p{
     color: black;
     font-size: 12pt;
@@ -246,127 +238,6 @@ h3{
 
 
 /*Footer*/
-/*
-footer{
-
-    background-color: black;
-    color:  white;
-    margin-bottom: 0px;
-    height: auto;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    flex-wrap: wrap;
-    width: 100%;
-}
-
-.footerEnlaces a{
-
-    text-decoration: none;
-    color: white;
-    font-size: 10pt;
-    font-family: 'Prelo-Book';
-}
-
-
-.footerEnlaces{
-
-    margin: 40px 40px 20px 40px;
-    
-}
-
-.footerEnlaces ul{
-
-    padding: 0 0 0 0;
-}
-
-.footerEnlaces ul li{
-
-    margin: 0px 0 0px 0;
-}
-
-.footerEnlaces ul li a:hover{
-
-        color: #FE5864;
-        cursor: pointer;
-
-}
-
-
-.footerContactos ul{
-
-    padding: 0 0 0 0;
-}
-
-.footerContactos a{
-
-    text-decoration: none;
-    color: white;
-    font-size: 10pt;
-    font-family: 'Prelo-Book';
-  
-}
-
-
-.footerContactos ul li a:hover{
-
-    color: #FE5864;
-    cursor: pointer
-}
-
-
-.footerContactos{
-
-    margin: 40px 40px 20px 40px;
-}
-
-
-.footerContactos ul li{
-
-    margin: 5px 0 5px 0;
-}
-
-.footerRedes{
-
-    margin: 40px 40px 20px 40px;
-}
-
-
-.logoredes{
-
-    height: 35px;
-    transition: all 300ms;
-}
-
-
-.logoredes:hover{
-
-    transform: scale(1.50);
-
-}
-
-
-#derechosReservados{
-    display: flex;
-    font-size: 10pt;
-    font-family: 'Prelo-Book';
-    color: rgb(77, 77, 77);
-    height: 27px;
-    text-align: center;
-    background-color: black;
-    width: 100%;
-    justify-content: center;
-    align-content: center;
-    align-items: center;
-    margin-bottom: 0;
-
-}
-
-
-*/
-
-
-/* Footer Bootstrap*/
 
 
 .footer{
@@ -382,9 +253,7 @@ footer{
     padding: 0%;
     font-size: 13px;
 
-
 }
-
 
 .py-5 p{
 
@@ -405,19 +274,16 @@ footer{
     border: 0;
 }
 
-
 .linkServicios{
 
     color: #fafafa;
     text-decoration: none;
 }
 
-
 .linkServicios:hover{
 
     color: #fe5864;
 }
-
 
 .linkContactanos{
 
@@ -431,21 +297,16 @@ h5{
     color: #fe5864;
 }
 
-
 .d-flex {
 
     margin: 0px;
     padding: 0px;
-
-
 }
 
 .col-6{
 
     margin-right: 40px;
-
 }
-
 
 .bi{
 
@@ -455,7 +316,10 @@ h5{
 
 /* anadiendo grid */
 
+/* inicio */
+
 .gridHome{
+    
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: auto 3fr auto;
@@ -496,6 +360,7 @@ h5{
 
 /* servicios */
 
+
 .gridServicios{
 
     display: grid;
@@ -504,81 +369,33 @@ h5{
     grid-template-areas: 
             "header header header header"
             "main main main main"
-            "serviciosContenido serviciosContenido serviciosContenido serviciosContenido"
-            "footer footer footer footer"
-            "copyrigth copyrigth copyrigth copyrigth"
-    ;
-
+            "servicios servicios servicios servicios"
+            "footer footer footer footer";
 }
 
-.serviciosContenido{
+
+.cardsServicios{
+
+    grid-area: servicios;
+}
+
+.cardsServicios{
 
     display: flex;
-    flex-direction: column;
     justify-content: center;
-    align-items: center;
-    width: 100%;
-    margin-top: 80px;
-
+    margin: 130px 180px 80px 180px;
+    gap: 50px;
+    flex-wrap: wrap;
 }
 
-.serviciosDiseñografico{
+.card{
 
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    padding: 40px 80px 40px 80px;
-    width: 100%;
-    align-items: center;
-    flex-wrap: nowrap;
-}
-
-.serviciosFotografia{
-
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: center;
-    padding: 40px 80px 40px 80px;
-    width: 100%;
-    align-items: center;
-    flex-wrap: nowrap;
-}
-
-.serviciosDiseñoweb{
-
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    padding: 40px 80px 40px 80px;
-    width: 100%;
-    align-items: center;
-    flex-wrap: nowrap;
-}
-
-.serviciosSocialmedia{
-
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: center;
-    padding: 40px 80px 40px 80px;
-    width: 100%;
-    align-items: center;
-    flex-wrap: nowrap;
-}
-
-
-.tituloServicios{
-
-    padding: 40px 80px 40px 80px;
-    font-family: 'Prelo-Bold';
-    font-size: 50px;
-    color:#fe5864
-
+    width: 700px;
 }
 
 
 
-/*portfolio*/
+/* portfolio */
 
 #portfolioContenido{
 
@@ -688,8 +505,6 @@ h5{
 
 }
 
-
-
 .formulario{
 
     margin: 50px 300px 120px 300px;
@@ -716,493 +531,7 @@ h5{
 /* aplicando media queries para mobile*/
 
 
-
-/*@media (min-width:767px){*/
-
-
-    /*      inicio   */
-/*
-    .gridHome{
-
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr;
-        grid-template-areas: 
-            "header"
-            "main"
-            "blogContenedor"
-            "footer"
-            "copyrigth"
-
-    }
-
-
-    h2{
-
-        font-size:  40px;
-    }
-
-    h3{
-        font-size: 35px;
-
-    }
-
-    p{
-        font-size: 25px;
-        margin: 20px 60px 20px 60px;
-    }
-
-    #tituloServicios{
-
-        font-size: 35px;
-        
-
-    }
-
-    #subtitulo{
-
-        font-size: 25px;
-    }
-
-    .header{
-
-        display: flex;
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr;
-        flex-direction: column;
-        justify-items: center;
-        height: auto;
-        padding: 20px;
-    }
-
-    #logotipoBlanco {
-
-        height: 80px;
-        padding: 20px 0 20px 0;
-    }
-
-
-    nav ul li{
-
-        display: flex;
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr;
-        flex-direction: column;
-        justify-content: center;
-        
-
-    }
-
-    nav ul li a{
-
-        font-size: 35px;
-        text-align: center;
-        
-
-
-    }
-
-    .tituloPortada1{
-
-        top: 600px;
-
-    }
-
-    .textoSlider{
-
-        top: 800px;
-    }
-
-
-
-    #imagenPortada1{
-
-        object-fit: cover;
-        height: 800px;
-    }
-
-
-    .servicios{
-
-        display: flex;
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr;
-        flex-direction: column;
-        align-items: center;
-        height: 1500px;
-        padding: 20px 0 0 0;
-
-    }
-
-    .contenedorServicios{
-
-        margin: 0 60px 0 60px;
-        justify-content: center;
-        align-items: center;
-    }
-
-    #tituloServicios{
-
-
-        align-items: center;
-    }
-
-
-    .blogContenedor{
-
-        width: auto;
-    }
-
-    .blog{
-
-        display: flex;
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr;
-        flex-direction: column;
-        justify-items: center;
-
-        
-    }
-
-    .videoBlog{
-
-        align-items: center;
-        justify-content: center;
-
-    }
-
-    .footertextos{
-
-        display: flex;
-        align-content: center;
-        flex-direction: column;
-
-    }
-
-    .footerEnlaces ul li a{
-
-        font-size: 30px;
-    }
-
-    .footerContactos ul li a{
-
-        font-size: 30px;
-
-
-    }
-
-    .logoredes{
-
-        width: 60px;
-    }
-
-*/
-
-    /* servicios */
-
-/*
-    .gridServicios{
-
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr;
-        grid-template-areas: 
-            "header"
-            "main"
-            "serviciosContenido"
-            "footer"
-            "copyrigth"
-
-        }
-
-    .serviciosContenido{
-
-        display: flex;
-    }
-
-    .serviciosDiseñografico{
-
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-        width: auto;
-    }
-
-    .serviciosFotografia{
-
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-        width: auto;
-
-    }
-
-    .serviciosDiseñoweb{
-
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-        width: auto;
-    }
-
-    .serviciosSocialmedia{
-
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-        width: auto;
-    }
-
-    .tituloServicios{
-
-        line-height: 50px;
-    }
-
-    .tituloServicios{
-        padding: 20px 60px 20px 60px;
-    }
-
-}
-
-*/
-
-
-/* version mobile */
-
-
-/*@media only screen and (max-width:767px){
-
-    .gridHome{
-
-        display: grid;
-            grid-template-columns: 1fr;
-            grid-template-rows: auto 2fr auto auto;
-            grid-template-areas: 
-                "header"
-                "main"
-                "blogContenedor"
-                "footer"
-                "copyrigth"
-    }
-
-    .header{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        width: 100vh;
-        height: 300px;
-    }
-
-    nav{
-
-        padding-top: 20px;
-    }
-
-    nav ul li a{
-
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        flex-wrap: wrap;
-        font-size: 1em;
-
-
-    }
-
-    nav ul li{
-
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        flex-wrap: wrap;
-        padding: 10px 15px 10px 15px;
-        margin: 0 0 0 0;
-
-    }
-
-
-    #imagenPortada1{
-
-        object-fit: cover;
-        height: 800px;
-
-    }
-
-    .servicios{
-
-        display: flex;
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr;
-        flex-direction: column;
-        align-content: center;
-        justify-content: center;
-        height: auto;
-        padding: 20px 0 0 0;
-
-    }
-
-
-    img{
-
-        width: 600px;
-
-    }
-
-    .contenedorServicios{
-
-        margin: 20px 60px 20px 60px;
-        justify-content: center;
-        align-items: center;
-    }
-
-
-
-    .blogContenedor{
-
-        width: 100vh;
-    }
-
-    .blogContenedor{
-
-        width: auto;
-    }
-
-    .blog{
-
-        display: flex;
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr;
-        flex-direction: column;
-        justify-items: center;
-
-        
-    }
-
-    .videoBlog{
-
-        align-items: center;
-        justify-content: center;
-        width: auto;
-
-    }
-
-    #videoYoutube{
-
-        width: 600px;
-        height: 400px;
-    }
-
-
-    .footertextos{
-
-        display: flex;
-        align-content: center;
-        flex-direction: column;
-
-    }
-
-
-    /* servicios */
-
-
-    /*
-    .gridServicios{
-
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr;
-        grid-template-areas: 
-            "header"
-            "main"
-            "serviciosContenido"
-            "footer"
-            "copyrigth"
-
-        }
-
-    .serviciosContenido{
-
-        display: flex;
-    }
-
-    .serviciosDiseñografico{
-
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-        width: auto;
-    }
-
-    .serviciosFotografia{
-
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-        width: auto;
-
-    }
-
-    .serviciosDiseñoweb{
-
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-        width: auto;
-    }
-
-    .serviciosSocialmedia{
-
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-        width: auto;
-    }
-
-    .tituloServicios{
-
-        line-height: 50px;
-    }
-
-    .tituloServicios{
-        padding: 20px 60px 20px 60px;
-    }
-
-
-    /*portfolio*/
-
-    
-/*
-    .contenedorPortfolio{
-
-        display: flex;
-        flex-direction: column;
-        align-content: center;
-
-    }
-
-    .imgportfolio{
-
-        width: 100vh;
-    }
-
-    .footer{
-
-        width: 100vh;
-    }
-
-    .copyrigth{
-
-        width: 100vh;
-    }
-}
-
-
-
-/* version desktop*/
-
+/* version mobile*/
 
 
 @media (max-width:425px) {
@@ -1295,18 +624,9 @@ h5{
 
 }
 
-
-
-    
-
-
-
-
-
-
+/* version tablet */
 
 @media (max-width:767px) {
-
 
 
     .header{
@@ -1316,10 +636,10 @@ h5{
         position: 0px 0px 0px 0px;
     }
 
-     .main{
+    .main{
 
         margin-top: 250px;
-     }
+    }
     
     .header a{
 
@@ -1388,7 +708,6 @@ h5{
         padding: 20px 10px 20px 10px;
     }
 
-
     .blog{
 
         flex-direction: column;
@@ -1404,7 +723,6 @@ h5{
         padding: 270px 0 0 0;
     }
 
-
     #tituloContactanos{
 
         padding: 300px 0 0 0;
@@ -1415,13 +733,31 @@ h5{
         margin: 50px 100px 50px 100px;
     }
 
-}
+    .cardsServicios{
 
+        margin: 280px 100px 80px 100px;
     
+    }
+
+    .card{
+
+        width: 400px;
+    }
+
+    .card-title{
+
+        margin-left: 20px;
+    }
+
+    .card-text {
+
+        margin: 20px;
+    }
+
+}
 
 
 @media (min-width:768px) {
-
 
 
     .imagenServicios{
@@ -1436,7 +772,6 @@ h5{
         justify-content: center;
 
     }
-
 
     #logotipoBlanco{
 
@@ -1487,7 +822,6 @@ h5{
         width: 100%;
     }
 
-
     .serviciosDiseñografico {
 
         gap: 20px;
@@ -1523,15 +857,16 @@ h5{
  }
 
 
- @media (min-width:1024px) {
+/* version desktop */
 
+
+ @media (min-width:1024px) {
 
     .header{
 
         justify-content: center;
         gap: 250px;
     }
-
 
     .carousel-inner{
 
@@ -1543,7 +878,6 @@ h5{
         display: flex;
         flex-direction: row;
         margin: 0 0 0 0;
-
 
     }
 
@@ -1563,7 +897,6 @@ h5{
 
         padding: 20px 10px 20px 10px;
     }
-
 
     .serviciosDiseñografico {
 
@@ -1586,12 +919,7 @@ h5{
     }
 
 
-
-
-
-
-
-/*extra xl*/
+/* version desktop extra xl*/
 
 @media (min-width: 1440px) {
     
@@ -1622,6 +950,6 @@ h5{
         width: 100%;
     }
 
- }
+    }
 
 }
