@@ -1,0 +1,795 @@
+@charset "UTF-8";
+* {
+  padding: 0;
+  margin: 0;
+}
+
+@font-face {
+  font-family: 'Prelo-Book';
+  src: url(../fonts/Prelo-Book.otf);
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Prelo-Bold';
+  src: url(../fonts/Prelo-Bold.otf);
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Prelo-ExtraBold';
+  src: url(../fonts/Prelo-ExtraBold.otf);
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'PreloSlab-Bold';
+  src: url(../fonts/PreloSlab-Bold.otf);
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'PreloSlab-Medium';
+  src: url(../fonts/PreloSlab-Medium.otf);
+  font-weight: 200;
+  font-style: normal;
+}
+
+body {
+  background-color: #fafafa;
+}
+
+.navbar {
+  padding-top: 0%;
+  padding-bottom: 0%;
+}
+
+.navbar .navbar-nav {
+  padding-right: 120px;
+  height: 60px;
+}
+
+.navbar #logotipoBlanco {
+  height: 35px;
+  margin: 0 0 0 120px;
+}
+
+.navbar .container-fluid {
+  background-color: #fe5864;
+}
+
+.navbar .container-fluid .dropdown-menu {
+  background-color: #fe5864;
+}
+
+.navbar .container-fluid .dropdown-item {
+  background-color: #fe5864;
+  color: #fafafa;
+}
+
+.navbar .container-fluid .dropdown-item:hover {
+  color: #754176;
+  font-family: 'Prelo-Bold';
+}
+
+.navbar .container-fluid .nav-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  align-items: center;
+}
+
+.navbar .container-fluid .nav-item .nav-link {
+  color: #fafafa;
+  font-family: 'Prelo-Bold';
+}
+
+.navbar .container-fluid .nav-item .nav-link:hover {
+  color: #754176;
+}
+
+.servicios {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 30px 30px 30px 30px;
+}
+
+.servicios .contenedorServicios {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.servicios .contenedorServicios .contenedorServicios figure {
+  margin: 0%;
+}
+
+.servicios .contenedorServicios .contenedorServicios figure .imagenServicios {
+  height: 100%;
+  width: 0%;
+}
+
+.servicios .contenedorServicios #tituloServicios {
+  color: white;
+  font-size: 15pt;
+  font-family: 'PreloSlab-Medium';
+  position: absolute;
+  -webkit-transition: all 300ms;
+  transition: all 300ms;
+}
+
+.servicios .contenedorServicios #tituloServicios:hover {
+  color: white;
+  cursor: pointer;
+  background-color: #fe5864;
+  padding: 10px 20px 10px 20px;
+}
+
+.blogContenedor {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 40px 120px 40px 120px;
+  width: auto;
+}
+
+.blogContenedor .titulosBlog {
+  color: #754176;
+  font-size: 20pt;
+  font-family: 'PreloSlab-Bold';
+  text-align: center;
+  vertical-align: middle;
+  height: 100%;
+}
+
+.blogContenedor .blog {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 100%;
+}
+
+.blogContenedor .blog .contenidoBlog {
+  width: 100%;
+}
+
+.blogContenedor .blog .contenidoBlog #subtitulo {
+  color: black;
+  font-size: 15pt;
+  font-family: 'Prelo-Bold';
+  margin: 40px 40px 40px 40px;
+}
+
+.blogContenedor .blog .contenidoBlog p {
+  color: black;
+  font-size: 12pt;
+  font-family: 'Prelo-Book';
+  margin: 40px 40px 40px 40px;
+}
+
+.footer {
+  background-color: #000000;
+}
+
+.footer .py-5 {
+  color: white;
+  margin: 0 200px 0 200px;
+  font-family: 'Prelo';
+  padding: 0%;
+  font-size: 13px;
+}
+
+.footer .py-5 .btn-primary {
+  background-color: #fe5864;
+  border: 0;
+}
+
+.footer .py-5 p {
+  color: #fafafa;
+  margin: 0;
+}
+
+.footer .py-5 .linkServicios {
+  color: #fafafa;
+  text-decoration: none;
+}
+
+.footer .py-5 .linkServicios:hover {
+  color: #fe5864;
+}
+
+.footer .py-5 .linkContactanos {
+  color: #fafafa;
+  text-decoration: none;
+}
+
+.footer .py-5 h5 {
+  font-size: 15px;
+  color: #fe5864;
+}
+
+.footer .col-6 {
+  margin-right: 40px;
+}
+
+.footer .bi {
+  color: #fafafa;
+}
+
+/* servicios */
+/* portfolio */
+#portfolioContenido {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  /*margin-top: 80px;*/
+  padding: 80px 0 0 0;
+}
+
+.contenedorPortfolio {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  grid-auto-rows: 250px;
+  padding: 0px;
+}
+
+.imgportfolio {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.itemPortfolio:nth-child(1) {
+  -ms-grid-row: span 3;
+      grid-row-start: span 3;
+}
+
+.itemPortfolio:nth-child(2) {
+  -ms-grid-row: span 2;
+      grid-row-start: span 2;
+}
+
+.itemPortfolio:nth-child(3) {
+  -ms-grid-row: span 1;
+      grid-row-start: span 1;
+}
+
+.itemPortfolio:nth-child(4) {
+  -ms-grid-row: span 2;
+      grid-row-start: span 2;
+}
+
+.itemPortfolio:nth-child(5) {
+  -ms-grid-row: span 2;
+      grid-row-start: span 2;
+}
+
+.itemPortfolio:nth-child(6) {
+  -ms-grid-row: span 2;
+      grid-row-start: span 2;
+}
+
+.itemPortfolio:nth-child(7) {
+  -ms-grid-row: span 3;
+      grid-row-start: span 3;
+}
+
+.itemPortfolio:nth-child(8) {
+  -ms-grid-row: span 2;
+      grid-row-start: span 2;
+}
+
+.itemPortfolio:nth-child(9) {
+  -ms-grid-row: span 1;
+      grid-row-start: span 1;
+}
+
+/* clientes */
+.contenedorClientes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 50px;
+  gap: 50px;
+  padding: 120px 150px 80px 150px;
+  /*margin: 80px 150px 40px 150px;*/
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.itemClientes {
+  padding: 50px;
+}
+
+.imagenClientes {
+  height: 100px;
+}
+
+/* contactanos */
+#tituloContactanos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 150px;
+  font-family: 'Prelo-Bold';
+  font-size: 30px;
+  color: #754176;
+}
+
+.formulario {
+  margin: 50px 300px 120px 300px;
+  font-family: 'Prelo-Book';
+}
+
+.col-md-6 {
+  padding: 20px 0 0 12px;
+}
+
+.col-12 {
+  padding: 20px 0 0 12px;
+}
+
+.col-md-4 {
+  padding: 20px 0 0 12px;
+}
+
+/* aplicando media queries para mobile*/
+/* version mobile*/
+@media (max-width: 425px) {
+  .main {
+    margin-top: 250px;
+  }
+  .blog {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .contenedorPortfolio {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-top: 80px;
+  }
+  .footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: auto;
+  }
+  .tituloServicios {
+    padding: 10px 20px 10px 60px;
+    font-size: 30px;
+  }
+  p {
+    margin: 20px 60px 20px 60px;
+  }
+  .imgServicios {
+    height: 90%;
+    width: 90%;
+  }
+  .serviciosContenido {
+    margin-top: 300px;
+  }
+  .serviciosDiseñografico {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 20px 10px 20px 10px;
+  }
+  .serviciosDiseñoweb {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 20px 10px 20px 10px;
+  }
+  .serviciosFotografia {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 20px 10px 20px 10px;
+  }
+  .serviciosSocialmedia {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 20px 10px 20px 10px;
+  }
+  .py-5 {
+    margin: 0 50px 0 50px;
+  }
+  .logoRedes {
+    padding: 10px 0 10px 0;
+  }
+}
+
+/* version tablet */
+@media (max-width: 767px) {
+  .header {
+    display: block;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: 250px;
+    position: 0px 0px 0px 0px;
+  }
+  .main {
+    margin-top: 250px;
+  }
+  .header a {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-top: 10px;
+  }
+  nav ul {
+    margin: 0px;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    padding: 0;
+  }
+  nav ul li {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 0%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  nav ul li a {
+    margin: 0;
+    padding: 0;
+  }
+  .servicios {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .imagenServicios {
+    height: 100%;
+    width: 100%;
+  }
+  .serviciosDiseñografico {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 20px 10px 20px 10px;
+  }
+  .serviciosDiseñoweb {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 20px 10px 20px 10px;
+  }
+  .serviciosFotografia {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 20px 10px 20px 10px;
+  }
+  .serviciosSocialmedia {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 20px 10px 20px 10px;
+  }
+  .blog {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .contenedorPortfolio {
+    margin-top: 170px;
+  }
+  .contenedorClientes {
+    padding: 270px 0 0 0;
+  }
+  #tituloContactanos {
+    padding: 300px 0 0 0;
+  }
+  .formulario {
+    margin: 50px 100px 50px 100px;
+  }
+  .cardsServicios {
+    margin: 280px 100px 80px 100px;
+  }
+  .card {
+    width: 400px;
+  }
+  .card-title {
+    margin-left: 20px;
+  }
+  .card-text {
+    margin: 20px;
+  }
+}
+
+@media (min-width: 768px) {
+  .imagenServicios {
+    height: 100%;
+    width: 100%;
+  }
+  .header {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  #logotipoBlanco {
+    margin: 0 0 0 50px;
+  }
+  nav {
+    margin: 0;
+  }
+  nav ul {
+    margin: 0;
+  }
+  nav ul li a {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 0 0 0 0;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  #subtitulo {
+    margin: 20px 10px 20px 10px;
+  }
+  p {
+    margin: 20px 10px 20px 10px;
+  }
+  .tituloServicios {
+    padding: 20px 10px 20px 10px;
+    font-size: 30px;
+  }
+  .imgServicios {
+    height: 100%;
+    width: 100%;
+  }
+  .serviciosDiseñografico {
+    gap: 20px;
+  }
+  .serviciosDiseñoweb {
+    gap: 20px;
+  }
+  .serviciosFotografia {
+    gap: 20px;
+  }
+  .serviciosSocialmedia {
+    gap: 20px;
+  }
+  .contenedorClientes {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    padding: 140px 40px 20px 40px;
+  }
+  .formulario {
+    margin: 50px 100px 50px 100px;
+  }
+}
+
+/* version desktop */
+@media (min-width: 1024px) {
+  .header {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    gap: 250px;
+  }
+  .carousel-inner {
+    width: 100%;
+  }
+  nav ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    margin: 0 0 0 0;
+  }
+  nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: end;
+  }
+  .imagenServicios {
+    height: 100%;
+    width: 100%;
+  }
+  .tituloServicios {
+    padding: 20px 10px 20px 10px;
+  }
+  .serviciosDiseñografico {
+    gap: 20px;
+  }
+  .serviciosDiseñoweb {
+    gap: 20px;
+  }
+  .serviciosFotografia {
+    gap: 20px;
+  }
+  .serviciosSocialmedia {
+    gap: 20px;
+  }
+  /* version desktop extra xl*/
+}
+
+@media (min-width: 1024px) and (min-width: 1440px) {
+  .header {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    gap: 600px;
+  }
+  nav {
+    margin: 0;
+  }
+  #logotipoBlanco {
+    margin: 0;
+  }
+  .carousel slide {
+    width: 100%;
+  }
+  .servicios {
+    width: 100%;
+    height: auto;
+  }
+}
+
+.gridServicios {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+  -ms-grid-rows: auto 3fr auto;
+      grid-template-rows: auto 3fr auto;
+      grid-template-areas: "header header header header" "main main main main" "servicios servicios servicios servicios" "footer footer footer footer";
+}
+
+.footer {
+  -ms-grid-row: 4;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 4;
+  grid-area: footer;
+}
+
+.cardsServicios {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 4;
+  grid-area: servicios;
+}
+
+.cardsServicios {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 130px 180px 80px 180px;
+  gap: 50px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.card {
+  width: 700px;
+}
+/*# sourceMappingURL=style.css.map */

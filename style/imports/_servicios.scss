@@ -1,0 +1,40 @@
+
+
+
+.gridServicios{
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto 3fr auto;
+    grid-template-areas: 
+            "header header header header"
+            "main main main main"
+            "servicios servicios servicios servicios"
+            "footer footer footer footer";
+}
+
+
+.footer{
+
+    grid-area: footer;
+}
+
+
+.cardsServicios{
+
+    grid-area: servicios;
+}
+
+.cardsServicios{
+
+    display: flex;
+    justify-content: center;
+    margin: 130px 180px 80px 180px;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+
+.card{
+
+    width: 700px;
+}
