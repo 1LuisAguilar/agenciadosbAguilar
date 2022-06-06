@@ -1,0 +1,38 @@
+
+
+/*Estilos para Logos de Clientes*/
+
+
+.contenedorClientes{
+
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 50px;
+    gap: 50px;
+    padding: 120px 150px 80px 150px;
+    justify-content: center;
+
+    .itemClientes{
+
+        padding: 50px;
+    
+        .imagenClientes{
+    
+            height: 100px;
+
+
+            @media (max-width:813px){
+
+                height: auto;
+                width: 200px;
+                justify-items: center;
+             }
+        }
+    
+    }
+    
+}
+
+
+

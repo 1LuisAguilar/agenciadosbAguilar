@@ -1,40 +1,77 @@
-
-
-
 .gridServicios{
 
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: auto 3fr auto;
+    grid-template-rows: auto 3fr auto auto;
     grid-template-areas: 
             "header header header header"
             "main main main main"
             "servicios servicios servicios servicios"
+            "etiquetas etiquetas etiquetas etiquetas"
             "footer footer footer footer";
+
+
+/*Estilos para Cards de servicios*/
+
+
+            .cardsServicios{
+
+                grid-area: servicios;
+                display: flex;
+                justify-content: center;
+                margin: 130px 180px 80px 180px;
+                gap: 50px;
+                flex-wrap: wrap;
+
+
+                .card{
+
+                    width: 700px;
+
+                    .card-title{
+
+                        
+                        @extend.estilosBold;
+                        margin: 0;
+                        padding-left: 10px;
+
+                    }
+
+                        .btn{
+
+                            background-color: $color2;
+                            border: 0;
+                            color: $color4;
+                            font-family: 'Prelo-Bold';
+
+                        }
+
+                    .card-text{
+
+
+                        font-family: 'Prelo-Book';
+
+                    }
+
+                }
+
+            }
+
 }
 
+/*Estilos para Sección de Etiquetas*/
 
-.footer{
+    .etiquetas{
 
-    grid-area: footer;
-}
+        grid-area: etiquetas;
+    }
 
 
-.cardsServicios{
+/*Estilos para Footer*/
 
-    grid-area: servicios;
-}
+    .footer{
 
-.cardsServicios{
+        grid-area: footer;
+    }
 
-    display: flex;
-    justify-content: center;
-    margin: 130px 180px 80px 180px;
-    gap: 50px;
-    flex-wrap: wrap;
-}
 
-.card{
-
-    width: 700px;
-}

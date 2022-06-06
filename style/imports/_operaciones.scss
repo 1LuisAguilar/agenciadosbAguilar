@@ -1,0 +1,72 @@
+ /*Each*/
+
+ $alto:38px;
+
+ @each $etiquetas in ecommerce, emprendimiento, branding {
+
+     .#{$etiquetas}-etiquetado{
+         width: auto;
+         height: $alto;
+         background-image: url('../style/imgEach/#{$etiquetas}.png');
+         background-repeat: no-repeat;
+         margin-bottom: 20px;
+         margin-left: 150px;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+     }
+ }
+
+
+
+ /*Extend*/
+
+ .estilosBold{
+
+    font-family: 'Prelo-Bold';
+    color: $color1;
+ }
+
+
+ /*Mixin*/
+
+    @mixin medidas ($width, $heigth){
+
+        height: $heigth;
+        width: $width;
+    }
+
+    .etiquetas{
+
+        @include medidas(360px,200px);
+        border-radius: 10px;
+        background-color: #EDEDED;
+
+    }
+
+
+/*Mapa*/
+
+
+    $redes:(
+
+        twitter: #FE9053,
+        facebook: #FE766A,
+        instagram: #FE5864,
+
+    );
+
+    @each $red, $color in $redes {
+
+        .btn--#{$red}{
+            background-color:$color;
+            font-family: 'Prelo-Bold';
+            border: none;
+            color: $color4;
+            padding: 10px 15px 10px 15px;
+            border-radius: 3px;
+            display: inline-block;
+
+        }
+
+    }

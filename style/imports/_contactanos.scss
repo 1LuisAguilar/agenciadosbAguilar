@@ -1,0 +1,65 @@
+
+
+/*Estilos para Formulario de Contactos*/
+
+
+#tituloContactanos{
+
+    display: flex;
+    justify-content: center;
+    padding-top: 150px;
+    font-family:'Prelo-Bold';
+    font-size: 30px;
+    color: $color1;
+
+
+}
+
+.formulario{
+
+    margin: 50px 50px 30px 50px;
+    font-family: 'Prelo-Book';
+
+    @media (min-width:1440px){
+
+        margin: 50px 300px 120px 300px;
+     }
+
+        .col-md-6{
+
+            padding: 20px 0 0 12px;
+        }
+        
+        .col-12{
+        
+            padding: 20px 0 0 12px;
+
+            .btn{
+
+                background-color: $color2;
+                border:0;
+                font-family: 'Prelo-Bold';
+
+            }
+
+        }
+        
+        .col-md-4{
+        
+            padding: 20px 0 0 12px;
+        }
+        
+
+}
+
+
+/*Estilos para Botonees de redes - Mapa*/
+
+.botones-redes{
+
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin: 30px 0px 30px 0px;
+    flex-wrap: wrap;
+}

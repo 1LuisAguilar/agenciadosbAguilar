@@ -43,6 +43,24 @@ body {
   background-color: #fafafa;
 }
 
+/*Estilos para Titulo H1*/
+.tituloGeneral {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: 'PreloSlab-Bold';
+  color: #754176;
+  background-color: #fafafa;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 40px;
+  margin: 60px 0px 0px 0px;
+  padding: 10px;
+  text-align: center;
+}
+
+/*Estilos para Navegador*/
 .navbar {
   padding-top: 0%;
   padding-bottom: 0%;
@@ -72,6 +90,12 @@ body {
 .navbar #logotipoBlanco {
   height: 35px;
   margin: 0 0 0 120px;
+}
+
+@media (max-width: 991px) {
+  .navbar #logotipoBlanco {
+    display: none;
+  }
 }
 
 .navbar .container-fluid {
@@ -114,6 +138,7 @@ body {
   color: #754176;
 }
 
+/*Estilos para Servicios*/
 .servicios {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -174,8 +199,10 @@ body {
   cursor: pointer;
   background-color: #fe5864;
   padding: 10px 20px 10px 20px;
+  border-radius: 10px;
 }
 
+/*Estilos para Blog para no Diseñadores*/
 .blogContenedor {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -255,6 +282,7 @@ body {
   }
 }
 
+/*Estilos para Footer*/
 .footer {
   background-color: #000000;
 }
@@ -310,68 +338,8 @@ body {
   color: #fafafa;
 }
 
-/* servicios */
-/* portfolio */
-/* clientes */
-.contenedorClientes {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding: 50px;
-  gap: 50px;
-  padding: 120px 150px 80px 150px;
-  /*margin: 80px 150px 40px 150px;*/
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.itemClientes {
-  padding: 50px;
-}
-
-.imagenClientes {
-  height: 100px;
-}
-
-/* contactanos */
-#tituloContactanos {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  padding-top: 150px;
-  font-family: 'Prelo-Bold';
-  font-size: 30px;
-  color: #754176;
-}
-
-.formulario {
-  margin: 50px 300px 120px 300px;
-  font-family: 'Prelo-Book';
-}
-
-.col-md-6 {
-  padding: 20px 0 0 12px;
-}
-
-.col-12 {
-  padding: 20px 0 0 12px;
-}
-
-.col-md-4 {
-  padding: 20px 0 0 12px;
-}
-
-/* aplicando media queries para mobile*/
-/* version mobile*/
+/*Aplicando media queries para mobile*/
+/*Version mobile*/
 @media (max-width: 425px) {
   .main {
     margin-top: 250px;
@@ -458,7 +426,7 @@ body {
   }
 }
 
-/* version tablet */
+/*Version tablet*/
 @media (min-width: 768px) {
   .imagenServicios {
     height: 100%;
@@ -532,7 +500,7 @@ body {
   }
 }
 
-/* version desktop */
+/*Version desktop*/
 @media (min-width: 1024px) {
   .header {
     -webkit-box-pack: center;
@@ -580,7 +548,7 @@ body {
   .serviciosSocialmedia {
     gap: 20px;
   }
-  /* version desktop extra xl*/
+  /*Version desktop extra Xl*/
 }
 
 @media (min-width: 1024px) and (min-width: 1440px) {
@@ -610,26 +578,17 @@ body {
   display: grid;
   -ms-grid-columns: 1fr 1fr 1fr 1fr;
       grid-template-columns: 1fr 1fr 1fr 1fr;
-  -ms-grid-rows: auto 3fr auto;
-      grid-template-rows: auto 3fr auto;
-      grid-template-areas: "header header header header" "main main main main" "servicios servicios servicios servicios" "footer footer footer footer";
+  -ms-grid-rows: auto 3fr auto auto;
+      grid-template-rows: auto 3fr auto auto;
+      grid-template-areas: "header header header header" "main main main main" "servicios servicios servicios servicios" "etiquetas etiquetas etiquetas etiquetas" "footer footer footer footer";
+  /*Estilos para Cards de servicios*/
 }
 
-.footer {
-  -ms-grid-row: 4;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 4;
-  grid-area: footer;
-}
-
-.cardsServicios {
+.gridServicios .cardsServicios {
   -ms-grid-row: 3;
   -ms-grid-column: 1;
   -ms-grid-column-span: 4;
   grid-area: servicios;
-}
-
-.cardsServicios {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -642,18 +601,62 @@ body {
       flex-wrap: wrap;
 }
 
-.card {
+.gridServicios .cardsServicios .card {
   width: 700px;
 }
 
+.gridServicios .cardsServicios .card .card-title {
+  margin: 0;
+  padding-left: 10px;
+}
+
+.gridServicios .cardsServicios .card .btn {
+  background-color: #fe5864;
+  border: 0;
+  color: #fafafa;
+  font-family: 'Prelo-Bold';
+}
+
+.gridServicios .cardsServicios .card .card-text {
+  font-family: 'Prelo-Book';
+}
+
+/*Estilos para Sección de Etiquetas*/
+.etiquetas {
+  -ms-grid-row: 4;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 4;
+  grid-area: etiquetas;
+}
+
+/*Estilos para Footer*/
+.footer {
+  -ms-grid-row: 5;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 4;
+  grid-area: footer;
+}
+
+/*Estilos para Contenido de Portfolio*/
 #portfolioContenido {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  /*margin-top: 80px;*/
-  padding: 80px 0 0 0;
+  padding: 60px 0 0 0;
+}
+
+@media (max-width: 991px) {
+  #portfolioContenido {
+    padding: 40px 0 0 0;
+  }
+}
+
+@media (max-width: 425px) {
+  #portfolioContenido {
+    padding: 0;
+  }
 }
 
 .contenedorPortfolio {
@@ -662,7 +665,7 @@ body {
   -ms-grid-columns: 1fr 1fr 1fr;
       grid-template-columns: 1fr 1fr 1fr;
   grid-auto-rows: 250px;
-  padding: 60px 0px 0px 0px;
+  padding: 0px 0px 0px 0px;
 }
 
 @media (max-width: 991px) {
@@ -674,10 +677,17 @@ body {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    padding: 40px 0 0 0;
+    padding: 0px 0 0 0;
   }
 }
 
+@media (max-width: 425px) {
+  .contenedorPortfolio {
+    margin-top: 40px;
+  }
+}
+
+/*Estilos para Imagenes de Portfolio*/
 .imgportfolio {
   width: 100%;
   height: 100%;
@@ -728,5 +738,196 @@ body {
 .itemPortfolio:nth-child(9) {
   -ms-grid-row: span 1;
       grid-row-start: span 1;
+}
+
+/*Estilos para Formulario de Contactos*/
+#tituloContactanos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 150px;
+  font-family: 'Prelo-Bold';
+  font-size: 30px;
+  color: #754176;
+}
+
+.formulario {
+  margin: 50px 50px 30px 50px;
+  font-family: 'Prelo-Book';
+}
+
+@media (min-width: 1440px) {
+  .formulario {
+    margin: 50px 300px 120px 300px;
+  }
+}
+
+.formulario .col-md-6 {
+  padding: 20px 0 0 12px;
+}
+
+.formulario .col-12 {
+  padding: 20px 0 0 12px;
+}
+
+.formulario .col-12 .btn {
+  background-color: #fe5864;
+  border: 0;
+  font-family: 'Prelo-Bold';
+}
+
+.formulario .col-md-4 {
+  padding: 20px 0 0 12px;
+}
+
+/*Estilos para Botonees de redes - Mapa*/
+.botones-redes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 40px;
+  margin: 30px 0px 30px 0px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+/*Estilos para Logos de Clientes*/
+.contenedorClientes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 50px;
+  gap: 50px;
+  padding: 120px 150px 80px 150px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.contenedorClientes .itemClientes {
+  padding: 50px;
+}
+
+.contenedorClientes .itemClientes .imagenClientes {
+  height: 100px;
+}
+
+@media (max-width: 813px) {
+  .contenedorClientes .itemClientes .imagenClientes {
+    height: auto;
+    width: 200px;
+    justify-items: center;
+  }
+}
+
+/*Each*/
+.ecommerce-etiquetado {
+  width: auto;
+  height: 38px;
+  background-image: url("../style/imgEach/ecommerce.png");
+  background-repeat: no-repeat;
+  margin-bottom: 20px;
+  margin-left: 150px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.emprendimiento-etiquetado {
+  width: auto;
+  height: 38px;
+  background-image: url("../style/imgEach/emprendimiento.png");
+  background-repeat: no-repeat;
+  margin-bottom: 20px;
+  margin-left: 150px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.branding-etiquetado {
+  width: auto;
+  height: 38px;
+  background-image: url("../style/imgEach/branding.png");
+  background-repeat: no-repeat;
+  margin-bottom: 20px;
+  margin-left: 150px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+/*Extend*/
+.estilosBold, .gridServicios .cardsServicios .card .card-title {
+  font-family: 'Prelo-Bold';
+  color: #754176;
+}
+
+/*Mixin*/
+.etiquetas {
+  height: 200px;
+  width: 360px;
+  border-radius: 10px;
+  background-color: #EDEDED;
+}
+
+/*Mapa*/
+.btn--twitter {
+  background-color: #FE9053;
+  font-family: 'Prelo-Bold';
+  border: none;
+  color: #fafafa;
+  padding: 10px 15px 10px 15px;
+  border-radius: 3px;
+  display: inline-block;
+}
+
+.btn--facebook {
+  background-color: #FE766A;
+  font-family: 'Prelo-Bold';
+  border: none;
+  color: #fafafa;
+  padding: 10px 15px 10px 15px;
+  border-radius: 3px;
+  display: inline-block;
+}
+
+.btn--instagram {
+  background-color: #FE5864;
+  font-family: 'Prelo-Bold';
+  border: none;
+  color: #fafafa;
+  padding: 10px 15px 10px 15px;
+  border-radius: 3px;
+  display: inline-block;
 }
 /*# sourceMappingURL=style.css.map */
