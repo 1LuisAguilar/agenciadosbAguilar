@@ -138,6 +138,13 @@ body {
   color: #754176;
 }
 
+/*Estilos para Carrousel*/
+@media (max-width: 320px) {
+  .carousel-inner {
+    width: 100%;
+  }
+}
+
 /*Estilos para Servicios*/
 .servicios {
   display: -webkit-box;
@@ -202,6 +209,12 @@ body {
   border-radius: 10px;
 }
 
+@media (max-width: 320px) {
+  .servicios .contenedorServicios figure img {
+    width: 100%;
+  }
+}
+
 /*Estilos para Blog para no Diseñadores*/
 .blogContenedor {
   display: -webkit-box;
@@ -213,6 +226,9 @@ body {
           flex-direction: column;
   margin: 40px 120px 40px 120px;
   width: auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .blogContenedor .titulosBlog {
@@ -233,6 +249,9 @@ body {
       -ms-flex-direction: row;
           flex-direction: row;
   width: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 @media (max-width: 767px) {
@@ -248,11 +267,35 @@ body {
   width: 100%;
 }
 
+@media (max-width: 425px) {
+  .blogContenedor .blog .contenidoBlog {
+    width: 300px;
+  }
+}
+
+@media (max-width: 320px) {
+  .blogContenedor .blog .contenidoBlog {
+    width: 200px;
+  }
+}
+
 .blogContenedor .blog .contenidoBlog #subtitulo {
   color: black;
   font-size: 15pt;
   font-family: 'Prelo-Bold';
   margin: 40px 40px 40px 40px;
+}
+
+@media (max-width: 320px) {
+  .blogContenedor .blog .contenidoBlog #subtitulo {
+    text-align: center;
+  }
+}
+
+@media (max-width: 425px) {
+  .blogContenedor .blog .contenidoBlog #subtitulo {
+    margin: 40px 10px 40px 10px;
+  }
 }
 
 .blogContenedor .blog .contenidoBlog p {
@@ -268,6 +311,12 @@ body {
         -ms-flex-pack: center;
             justify-content: center;
     margin: 0 0px 30px 0px;
+  }
+}
+
+@media (max-width: 767px) {
+  .blogContenedor .blog .contenidoBlog {
+    text-align: center;
   }
 }
 
@@ -298,6 +347,18 @@ body {
 @media (max-width: 500px) {
   .footer .py-5 {
     margin: 0 60px 0px 60px;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer .py-5 {
+    margin: 0 100px 0px 100px;
+  }
+}
+
+@media (max-width: 320px) {
+  .footer .py-5 {
+    margin: 0px 50px 0px 50px;
   }
 }
 
