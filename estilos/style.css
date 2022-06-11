@@ -339,7 +339,7 @@ body {
 .footer .py-5 {
   color: #fafafa;
   margin: 0 200px 0 200px;
-  font-family: 'Prelo';
+  font-family: 'Prelo-Book';
   padding: 0%;
   font-size: 13px;
 }
@@ -389,6 +389,7 @@ body {
 .footer .py-5 h5 {
   font-size: 15px;
   color: #fe5864;
+  font-family: 'Prelo-Bold';
 }
 
 .footer .col-6 {
